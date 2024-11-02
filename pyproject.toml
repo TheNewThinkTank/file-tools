@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "file-tools"
+version = "0.0.1"
+description = "common file conversions"
+authors = ["Gustav Rasmussen"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+ruff = "^0.7.2"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
