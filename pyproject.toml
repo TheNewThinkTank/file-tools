@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "file-tools"
-version = "0.0.1"
+version = "0.0.2"
 description = "common file conversions"
 authors = ["Gustav Rasmussen"]
 readme = "README.md"
