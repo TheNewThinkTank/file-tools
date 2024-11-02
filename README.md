@@ -5,7 +5,7 @@ common file conversions
 ## Installation
 
 ```BASH
-pip install file-helper
+pip install file-convertion-tools
 ```
 
 ## Usage example
