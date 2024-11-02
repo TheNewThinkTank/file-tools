@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "file-convertion-tools"
-version = "0.0.6"
+version = "0.0.7"
 description = "common file conversions"
 authors = ["Gustav Rasmussen"]
 readme = "README.md"
-packages = []
+packages = [{include = "file-convertion-tools"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
