@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "file-tools"
+name = "src"
 version = "0.0.2"
 description = "common file conversions"
 authors = ["Gustav Rasmussen"]
