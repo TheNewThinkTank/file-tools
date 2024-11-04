@@ -1,32 +1,14 @@
-"""_summary_
-"""
-
 import json
 import yaml  # type: ignore
+from pathlib import Path
 
 
-def json_to_yaml(in_file: str) -> None:
+def json_to_yaml(in_file: Path) -> None:
     """Create YAML file from JSON file, without sorting keys alphabetically.
 
     :param in_file: absolute path to JSON file
-    :type in_file: str
+    :type in_file: Path
     """
-
-    with open(in_file, 'r') as rf, open(in_file.replace('json', 'yml'), "w") as wf:
+    output_file = in_file.with_suffix('.yml')
+    with open(in_file, 'r') as rf, open(output_file, "w") as wf:
         yaml.dump(json.load(rf), wf, sort_keys=False)
-
-
-def main():
-    # TODO: make user and athlete dynamic
-    user = "gustavcollinrasmussen"
-    athlete = "gustav_rasmussen"
-    data_path = f"/Users/{user}/Library/CloudStorage/GoogleDrive-gcr84@hotmail.com/My Drive/DATA/fitness-tracker-data/{athlete}"
-
-    in_file_name = "/db.json"  # f"/log_archive/JSON/2023/June/test.json"
-    in_file = data_path + in_file_name
-
-    json_to_yaml(in_file)
-
-
-if __name__ == "__main__":
-    main()
