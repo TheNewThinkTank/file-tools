@@ -10,15 +10,19 @@ pip install file-convertion-tools
 
 ## Usage example
 
-Importing
+Importing example
 
 ```Python
-import file_tools
+from file_convertion_tools.load_toml import load_toml
 ```
 
 Usage
 
 ```Python
+from pprint import pprint as pp
+
+data: dict = load_toml("some_file.toml")
+pp(data, sort_dicts=False)
 ```
 
 <!--
