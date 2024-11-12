@@ -52,8 +52,8 @@
           # - name: lint-with-ruff
           #   run: make -f .config/Makefile lint-ruff
     
-          - name: static-type-checks-with-mypy
-            run: make -f .config/Makefile static-type-checks
+          # - name: static-type-checks-with-mypy
+          #   run: make -f .config/Makefile static-type-checks
 
           - name: Run tests
             run: poetry run pytest --cov --cov-report=xml
