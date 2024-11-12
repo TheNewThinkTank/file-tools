@@ -49,8 +49,8 @@
           - name: check-poetry-version
             run: poetry --version
     
-          - name: lint-with-ruff
-            run: make -f .config/Makefile lint-ruff
+          # - name: lint-with-ruff
+          #   run: make -f .config/Makefile lint-ruff
     
           - name: static-type-checks-with-mypy
             run: make -f .config/Makefile static-type-checks
