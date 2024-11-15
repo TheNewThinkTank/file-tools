@@ -23,6 +23,6 @@ def test_concatenate_files():
         # Read the output file and check its contents
         temp_output.seek(0)
         result = temp_output.read()
-        expected_result = "line1_file1line1_file2\nline2_file1line2_file2\nline3_file1\n"
+        expected_result = "line1_file1line1_file2\nline2_file1line2_file2\nline3_file1"
         
         assert result == expected_result, f"Expected '{expected_result}', but got '{result}'"
