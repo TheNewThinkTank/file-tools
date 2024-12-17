@@ -35,7 +35,7 @@ jobs:
 
       - name: install-dependencies-with-poetry
         run: |
-          poetry lock [--no-update]
+          poetry lock --no-update
           poetry install
         env:
           POETRY_VIRTUALENVS_IN_PROJECT: true
