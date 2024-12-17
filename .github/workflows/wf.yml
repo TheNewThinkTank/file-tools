@@ -34,7 +34,9 @@ jobs:
           restore-keys: ${{ runner.os }}-poetry-
 
       - name: install-dependencies-with-poetry
-        run: poetry install
+        run: |
+          poetry lock [--no-update]
+          poetry install
         env:
           POETRY_VIRTUALENVS_IN_PROJECT: true
         if: steps.cache.outputs.cache-hit != 'true'
