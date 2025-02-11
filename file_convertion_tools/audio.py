@@ -1,5 +1,5 @@
 
-from moviepy.editor import AudioFileClip
+from moviepy import AudioFileClip
 import sys
 import os
 
