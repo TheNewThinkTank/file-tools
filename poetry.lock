@@ -492,14 +492,14 @@ files = [
 
 [[package]]
 name = "moviepy"
-version = "2.1.2"
+version = "2.2.1"
 description = "Video editing with Python"
 optional = false
 python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "moviepy-2.1.2-py3-none-any.whl", hash = "sha256:6cdc0d739110c8f347a224d72bd59eebaec010720d01eff290d37111bf545a73"},
-    {file = "moviepy-2.1.2.tar.gz", hash = "sha256:22c57a7472f607eaad9fe80791df67c05082e1060fb74817c4eaac68e138ee77"},
+    {file = "moviepy-2.2.1-py3-none-any.whl", hash = "sha256:6b56803fec2ac54b557404126ac1160e65448e03798fa282bd23e8fab3795060"},
+    {file = "moviepy-2.2.1.tar.gz", hash = "sha256:c80cb56815ece94e5e3e2d361aa40070eeb30a09d23a24c4e684d03e16deacb1"},
 ]
 
 [package.dependencies]
@@ -507,7 +507,7 @@ decorator = ">=4.0.2,<6.0"
 imageio = ">=2.5,<3.0"
 imageio_ffmpeg = ">=0.2.0"
 numpy = ">=1.25.0"
-pillow = ">=9.2.0,<11.0"
+pillow = ">=9.2.0,<12.0"
 proglog = "<=1.0.0"
 python-dotenv = ">=0.10"
 
