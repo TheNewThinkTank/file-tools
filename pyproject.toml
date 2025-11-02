@@ -8,7 +8,7 @@ packages = [{include = "file_convertion_tools"}]
 
 [tool.poetry.dependencies]
 moviepy = "^2.1.2"
-numpy = "2.3.3"
+numpy = "2.3.4"
 python = "^3.11"
 pandas = "^2.2.3"
 pypdf = ">=5.1,<7.0"
